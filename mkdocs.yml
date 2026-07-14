@@ -1,0 +1,54 @@
+site_name: AItools AI工具跟踪
+site_url: https://yanzhg.github.io/aitools/
+
+theme:
+  name: material
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: blue
+      accent: blue
+      toggle:
+        icon: material/weather-night
+        name: 切换至深色模式
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: blue
+      accent: blue
+      toggle:
+        icon: material/weather-sunny
+        name: 切换至浅色模式
+  features:
+    - navigation.expand
+    - navigation.top
+    - content.code.copy
+    - content.code.annotate
+    - search.suggest
+    - search.highlight
+    - toc.follow
+  sidebar_width: 25rem
+
+plugins:
+  - search:
+      separator: '[\s\-\.，。、]'
+      lang: zh
+
+#nav:
+#  - 首页: index.md
+#  - 今日新闻: posts/index.md
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/yanzhg
+
+extra_css:
+  - assets/style.css
+
+markdown_extensions:
+  - pymdownx.arithmatex:
+      generic: true
+
+extra_javascript:
+  - javascripts/mathjax-config.js
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js

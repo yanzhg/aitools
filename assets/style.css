@@ -1,0 +1,38 @@
+/* 全局字体统一 */
+body {
+    font-family: "Microsoft Yahei", "PingFang SC", sans-serif;
+}
+
+/* 首页标题居中加粗 */
+.md-content h1 {
+    text-align: center;
+    font-weight: 600;
+    margin: 2rem 0;
+    color: #2c3e50;
+}
+
+/* 正文行高舒适 */
+.md-content p {
+    line-height: 1.8;
+    font-size: 16px;
+}
+
+/* 代码块美化 */
+pre {
+    border-radius: 8px !important;
+}
+
+/* 侧边导航文字大小 */
+.md-nav__link {
+    font-size: 15px;
+}
+
+/* 页面顶部导航栏简约化 */
+.md-header {
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+/* 隐藏多余边角元素 */
+.md-footer-meta {
+    display: none;
+}
